@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import react, { Fragment } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const name = "리액트";
+	return (
+		<>
+			<h1>헬로 {name}</h1>
+			<h2>작동 테스트</h2>
+			<h3>뭔데!</h3>
+			{name === "리액트" ? <h1>리액트입니다.</h1> : <h1>리액트가 아닙니다</h1>}
+		</>
+	);
 }
 
 export default App;
