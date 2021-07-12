@@ -1,8 +1,8 @@
 import React from "react";
-import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 const App = () => {
-	return <MyComponent name="왈도">칠드런</MyComponent>;
+	return <Counter />;
 };
 
 export default App;
