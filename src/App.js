@@ -1,21 +1,12 @@
-import React, { useState } from "react";
-import Average from "./hooks/Average";
+import React, { Component } from "react";
+import SassComponent from "./style/SassComponent";
 
-const App = () => {
-	const [visible, setVisible] = useState(false);
-	return (
-		<div>
-			<button
-				onClick={() => {
-					setVisible(!visible);
-				}}
-			>
-				{visible ? "숨기기" : "보이기"}
-			</button>
-			<hr />
-			{visible && <Average />}
-		</div>
-	);
-};
-
-export default App;
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<SassComponent />
+			</div>
+		);
+	}
+}
