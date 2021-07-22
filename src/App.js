@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Info from "./hooks/Info";
+import Average from "./hooks/Average";
 
 const App = () => {
 	const [visible, setVisible] = useState(false);
@@ -13,7 +13,7 @@ const App = () => {
 				{visible ? "숨기기" : "보이기"}
 			</button>
 			<hr />
-			{visible && <Info />}
+			{visible && <Average />}
 		</div>
 	);
 };
