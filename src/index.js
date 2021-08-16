@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import App from "./14_news_viewer/App";
+import App from "./15_context_api/App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
