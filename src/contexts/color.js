@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext } from "react";
 
 const ColorContext = createContext({
 	state: { color: "black", subcolor: "red" },
@@ -7,9 +7,5 @@ const ColorContext = createContext({
 		setSubcolor: () => {},
 	},
 });
-
-const ColorProvider = ({ children }) => {
-	const [color, setColor] = useState("black");
-};
 
 export default ColorContext;
